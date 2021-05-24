@@ -1,0 +1,146 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &__header {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+
+    &--headline {
+      color: $grey-nurse;
+      font-size: 2.4rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    &--accent-line {
+      width: 100%;
+      height: 1px;
+      color: $accent-line;
+      margin-left: 1rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $text;
+    margin-bottom: 2rem;
+  }
+
+  &__skills {
+    display: flex;
+    justify-content: space-evenly;
+
+    &--icon {
+      margin-right: 1rem;
+    }
+    &--left,
+    &--right {
+      & ul {
+        list-style: none;
+        color: $text;
+        font-family: 'hack', 'sans-serif';
+        font-size: 1.4rem;
+
+        & li {
+          padding: 0.6rem;
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+    & img {
+      width: 90%;
+      max-width: 30rem;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    &__header {
+    }
+    &__skills {
+    }
+    &__img {
+      & img {
+        width: 30rem;
+        height: fit-content;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 25rem 0;
+
+    &__header {
+      margin-bottom: 3rem;
+
+      &--headline {
+        font-size: 3.2rem;
+      }
+
+      &--accent-line {
+        width: 20rem;
+      }
+    }
+
+    &__text {
+      font-size: 1.6rem;
+    }
+
+    &__skills {
+      justify-content: flex-start;
+
+      &--icon {
+        margin-right: 1.3rem;
+      }
+      &--left,
+      &--right {
+        & ul {
+          font-size: 1.4rem;
+
+          & li {
+            padding-right: 4rem;
+          }
+        }
+      }
+    }
+
+    &__img {
+      margin-top: 5rem;
+      height: fit-content;
+
+      & img {
+        width: 30rem;
+        height: auto;
+      }
+    }
+
+    &__left {
+      width: 70%;
+      padding-right: 7rem;
+    }
+
+    &__right {
+      padding-top: 3rem;
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

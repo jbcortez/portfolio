@@ -1,0 +1,130 @@
+.hero {
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__headline {
+    font-size: 4rem;
+    color: $turqoise;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  &__sub-headline {
+    font-size: 2.4rem;
+    color: $grey-nurse;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+    &--highlight-container {
+      position: relative;
+    }
+
+    &--highlight {
+      width: 16rem;
+      height: 1.4rem;
+      background-color: $night-shadz;
+      border-radius: 5px;
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      bottom: 0.3rem;
+      transform: skewX(-30deg);
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $text;
+    margin-bottom: 3rem;
+
+    &--link {
+      color: $turqoise;
+
+      &:hover {
+        color: #00fff2;
+      }
+    }
+  }
+
+  &__scroll-icon {
+    &--container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 20rem;
+      margin-bottom: -10rem;
+    }
+    cursor: pointer;
+  }
+}
+
+#circle {
+  animation: scroll 2s ease-in-out infinite;
+  transform: translateX(-0.5px);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(-0.5px, 0);
+  }
+  50% {
+    transform: translate(-0.5px, 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    &__headline {
+      font-size: 6rem;
+    }
+    &__sub-headline {
+      font-size: 4rem;
+      line-height: 5rem;
+
+      &--highlight {
+        width: 26rem;
+        height: 2rem;
+        bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    &__headline {
+      font-size: 8rem;
+      margin-bottom: 0;
+    }
+
+    &__sub-headline {
+      font-size: 4.8rem;
+      &--highlight-container {
+        display: inline-block;
+      }
+
+      &--highlight {
+        width: 32rem;
+        height: 2.5rem;
+        border-radius: 5px 10px 5px 10px;
+        bottom: 0.6rem;
+        left: -0.6 rem;
+        transform: skewX(-45deg);
+      }
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      width: 70rem;
+      margin-bottom: 4rem;
+    }
+
+    &__scroll-icon {
+      &--container {
+        height: 25rem;
+      }
+    }
+  }
+}

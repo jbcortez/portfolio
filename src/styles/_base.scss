@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$hoki: #668c9e;
+$turqoise: #24e1d8;
+$grey-nurse: #f5f7f4;
+$night-shadz: #b13b58;
+$text: #dfdae0;
+$accent-line: hsl(285, 10, 87, 44%);
+$background: #121e2b;
+$card: #334851;
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-primary {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 17.7rem;
+  height: 5.4rem;
+  border: $turqoise solid 1px;
+  border-radius: 5px;
+  color: $turqoise;
+  font-size: 1.6rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  outline: none;
+  background-color: $night-shadz;
+  width: 14.5rem;
+  height: 4.4rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-tertiary {
+  outline: none;
+  background-color: transparent;
+  width: 16rem;
+  height: 5.2rem;
+  border: 2px dashed $turqoise;
+  border-radius: 5px;
+  color: $turqoise;
+  font-size: 2.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-nav {
+  font-size: 1.4rem;
+  width: 10rem;
+  height: 3.5rem;
+  background-color: transparent;
+  border: 2px dashed $turqoise;
+  border-radius: 5px;
+  color: $turqoise;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
