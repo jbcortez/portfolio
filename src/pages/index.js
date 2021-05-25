@@ -14,7 +14,13 @@ const IndexPage = () => {
     <div>
       <Nav />
       <div className={'container'}>
-        <Helmet />
+        <Helmet>
+          <title>Justin Cortez</title>
+          <link
+            rel='stylesheet'
+            href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'
+          />
+        </Helmet>
 
         <Hero />
         <About />
