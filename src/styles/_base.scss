@@ -61,6 +61,7 @@ a {
   font-weight: 400;
   cursor: pointer;
   transition: all 0.3s;
+  backface-visibility: hidden;
 
   &:hover {
     transform: scale(1.05);
@@ -90,12 +91,13 @@ a {
   border-radius: 5px;
   color: $turqoise;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: transform 0.3s;
+  backface-visibility: hidden;
 
   &:hover {
     background-color: $turqoise;
     color: $background;
-    transition: all 0.3s;
+    transition: transform 0.3s;
     transform: scale(1.05);
   }
 }
