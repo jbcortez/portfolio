@@ -1,0 +1,14 @@
+- Animate nav bar on load
+- Add animations for hero
+- Add animations for about
+- Add animations for projects 
+- Add animations for contact 
+- Deploy
+
+Other things to do:
+- Refactor weathercat to be responsive
+- Deploy weathercat 
+
+- Add more color to filefire 
+- Fix broken styles:
+--- Context menu on desktop: hover styles

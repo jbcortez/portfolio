@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/main.scss';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
   const toggleOpen = (e) => {
@@ -28,36 +29,117 @@ const Nav = () => {
       </div>
       <ul className='navbar__links'>
         <li className='navbar__links--link'>
-          <a href='#about'>About</a>
+          <Link
+            activeClass='active'
+            to='about'
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={-75}
+            duration={500}
+            delay={0}
+            isDynamic={true}
+            // onSetActive={this.handleSetActive}
+            // onSetInactive={this.handleSetInactive}
+            ignoreCancelEvents={false}>
+            About
+          </Link>
         </li>
         <li className='navbar__links--link'>
-          <a href='#projects'>Projects</a>
+          <Link
+            activeClass='active'
+            to='projects'
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={-75}
+            duration={500}
+            delay={0}
+            isDynamic={true}
+            // onSetActive={this.handleSetActive}
+            // onSetInactive={this.handleSetInactive}
+            ignoreCancelEvents={false}>
+            Projects
+          </Link>
         </li>
         <li className='navbar__links--link'>
-          <a href='#contact'>Contact</a>
+          <Link
+            activeClass='active'
+            to='contact'
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={-75}
+            duration={500}
+            delay={0}
+            isDynamic={true}
+            // onSetActive={this.handleSetActive}
+            // onSetInactive={this.handleSetInactive}
+            ignoreCancelEvents={false}>
+            Contact
+          </Link>
         </li>
         <li className='navbar__links--link'>
-          <a href='#resume'>
+          <a href='#'>
             <button className='btn-nav'>Resume</button>
           </a>
         </li>
       </ul>
       <ul className='navbar__links--mobile' id='mobile-nav'>
         <li className='navbar__links--mobile-link'>
-          <a href='#about' onClick={toggleOpen}>
+          <Link
+            onClick={toggleOpen}
+            activeClass='active'
+            to='about'
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={-20}
+            duration={500}
+            delay={250}
+            isDynamic={true}
+            // onSetActive={this.handleSetActive}
+            // onSetInactive={this.handleSetInactive}
+            ignoreCancelEvents={false}>
             About
-          </a>
+          </Link>
         </li>
         <li className='navbar__links--mobile-link'>
-          <a href='#projects' onClick={toggleOpen}>
+          <Link
+            onClick={toggleOpen}
+            activeClass='active'
+            to='projects'
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={-20}
+            duration={500}
+            delay={250}
+            isDynamic={true}
+            // onSetActive={this.handleSetActive}
+            // onSetInactive={this.handleSetInactive}
+            ignoreCancelEvents={false}>
             Projects
-          </a>
+          </Link>
         </li>
 
         <li className='navbar__links--mobile-link'>
-          <a href='#contact' onClick={toggleOpen}>
+          <Link
+            onClick={toggleOpen}
+            activeClass='active'
+            to='contact'
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={-20}
+            duration={500}
+            delay={250}
+            isDynamic={true}
+            // onSetActive={this.handleSetActive}
+            // onSetInactive={this.handleSetInactive}
+            ignoreCancelEvents={false}>
             Contact
-          </a>
+          </Link>
         </li>
         <li className='navbar__links--mobile-link'>
           <a href='#resume' onClick={toggleOpen}>

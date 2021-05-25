@@ -1,6 +1,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #121e2be5;
 
   &__menu-btn {
     cursor: pointer;
@@ -8,8 +10,17 @@
     position: relative;
     margin-top: 1rem;
     z-index: 100;
+    height: 3rem;
+    width: 5rem;
+    border: none;
+    background-color: transparent;
+    position: relative;
 
     &--hamburger {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: $turqoise;
       width: 4rem;
       height: 0.3rem;
@@ -40,7 +51,7 @@
     &.open {
       .navbar__menu-btn--hamburger {
         background: transparent;
-        transform: translateX(-20px);
+        transform: translateX(-40px);
 
         &::before {
           transform: rotate(45deg) translate(15px, -15px);
@@ -101,7 +112,13 @@
 
 @media screen and (min-width: 1200px) {
   .navbar {
-    padding: 0 3rem;
+    height: 7rem;
+    padding: 0 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
     &__menu-btn {
       display: none;
     }
@@ -114,6 +131,31 @@
       width: 40rem;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
+
+      &--link:not(:last-child) {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          bottom: 0.2rem;
+          left: -1px;
+          content: '';
+          height: 0.7rem;
+          width: 100%;
+          background-color: $night-shadz;
+          z-index: -1;
+          transform: skewX(-45deg);
+          border-radius: 5px;
+          transition: all 0.3s;
+          opacity: 0;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          transition: all 0.3s;
+        }
+      }
     }
 
     &__logo {

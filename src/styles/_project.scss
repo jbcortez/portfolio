@@ -102,13 +102,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .project__icons--icon {
+    cursor: pointer;
+  }
+
   .project {
     border: none;
     padding: 0;
     margin-bottom: 15rem;
     display: flex;
 
-    z-index: -100;
     align-items: center;
 
     &__header {
@@ -255,6 +258,7 @@
       &--icon {
         color: $text;
         margin-left: 1.5rem;
+        margin-right: 0;
       }
     }
 

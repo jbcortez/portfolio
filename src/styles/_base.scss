@@ -39,6 +39,14 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $turqoise;
+    color: $background;
+    transform: scale(1.05);
+    transition: all 0.3s;
+  }
 }
 
 .btn-secondary {
@@ -52,6 +60,12 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+  }
 }
 
 .btn-tertiary {
@@ -75,6 +89,15 @@ a {
   border: 2px dashed $turqoise;
   border-radius: 5px;
   color: $turqoise;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $turqoise;
+    color: $background;
+    transition: all 0.3s;
+    transform: scale(1.05);
+  }
 }
 
 .overflow-hidden {

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/main.scss';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -25,12 +26,37 @@ const Hero = () => {
           </a>
           .
         </p>
-        <a href='#projects'>
+        <Link
+          activeClass='active'
+          to='projects'
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={-75}
+          duration={500}
+          delay={0}
+          isDynamic={true}
+          // onSetActive={this.handleSetActive}
+          // onSetInactive={this.handleSetInactive}
+          ignoreCancelEvents={false}>
           <button className='btn-primary'>View Projects</button>
-        </a>
+        </Link>
+
         <div className='hero__scroll-icon--container'>
           {
-            <a href='#about'>
+            <Link
+              activeClass='active'
+              to='about'
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={-75}
+              duration={500}
+              delay={0}
+              isDynamic={true}
+              // onSetActive={this.handleSetActive}
+              // onSetInactive={this.handleSetInactive}
+              ignoreCancelEvents={false}>
               <svg
                 className='hero__scroll-icon'
                 width='43'
@@ -50,7 +76,7 @@ const Hero = () => {
                 />
                 <circle id='circle' cx='22' cy='21' r='16' fill='#24e1d8' />
               </svg>
-            </a>
+            </Link>
           }
         </div>
       </div>

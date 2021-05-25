@@ -1,5 +1,5 @@
 .hero {
-  height: 94vh;
+  height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +109,7 @@
         width: 32rem;
         height: 2.5rem;
         border-radius: 5px 10px 5px 10px;
-        bottom: 0.6rem;
+        bottom: 0;
         left: -0.6 rem;
         transform: skewX(-45deg);
       }
