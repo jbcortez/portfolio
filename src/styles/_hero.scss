@@ -16,6 +16,7 @@
     color: $grey-nurse;
     font-weight: 400;
     margin-bottom: 2rem;
+    line-height: 1.3;
 
     &--highlight-container {
       position: relative;
@@ -23,7 +24,7 @@
 
     &--highlight {
       width: 16rem;
-      height: 1.4rem;
+      height: 1.3rem;
       background-color: $night-shadz;
       border-radius: 5px;
       z-index: -1;
