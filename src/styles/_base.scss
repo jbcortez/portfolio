@@ -43,12 +43,53 @@ a {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $night-shadz;
+    transition: width 0.2s;
+    transition-delay: 0.2s;
+    z-index: -2;
+  }
+
+  &::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $turqoise;
+    transition: width 0.2s;
+    z-index: -1;
+  }
 
   &:hover {
-    background-color: $turqoise;
-    color: $background;
     transform: scale(1.05);
-    transition: all 0.3s;
+    transition: all 0.2s;
+    color: $background;
+    border: none;
+
+    &::after {
+      width: 100%;
+      transition: all 0.2s;
+      border-color: $night-shadz;
+      border-radius: 5px;
+    }
+
+    &::before {
+      width: 100%;
+      transition: all 0.2s;
+      transition-delay: 0.2s;
+      border-color: $turqoise;
+      border-radius: 5px;
+    }
   }
 }
 

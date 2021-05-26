@@ -1,11 +1,13 @@
 .hero {
-  height: 94vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  margin-top: -6rem;
 
   &__headline {
-    font-size: 4rem;
+    font-size: 4.8rem;
     color: $turqoise;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -13,7 +15,7 @@
   }
 
   &__sub-headline {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: $grey-nurse;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -25,17 +27,17 @@
         content: '';
         width: 100%;
         background-color: $night-shadz;
-        height: 2rem;
+        height: 1rem;
         position: absolute;
-        bottom: 0.5rem;
+        bottom: 0.2rem;
         left: 0;
         z-index: -1;
         transition: all 0.3s;
       }
 
       &:hover::after {
-        bottom: 1rem;
-        height: 3rem;
+        bottom: 0.3rem;
+        height: 2rem;
         transition: all 0.3s;
       }
     }
@@ -48,7 +50,10 @@
 
     &--link {
       position: relative;
+      display: block;
+      width: fit-content;
       font-weight: 700;
+      margin: 0 auto;
       &::after {
         position: absolute;
         left: 0;
@@ -79,20 +84,6 @@
   }
 }
 
-#circle {
-  animation: scroll 2s ease-in-out infinite;
-  transform: translateX(-0.5px);
-}
-
-@keyframes scroll {
-  0% {
-    transform: translate(-0.5px, 0);
-  }
-  50% {
-    transform: translate(-0.5px, 30px);
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     &__headline {
@@ -107,6 +98,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    text-align: left;
     &__headline {
       font-size: 8rem;
       margin-bottom: 0;
@@ -116,6 +108,23 @@
       font-size: 4.8rem;
 
       &--highlight {
+        &::after {
+          content: '';
+          width: 100%;
+          background-color: $night-shadz;
+          height: 2rem;
+          position: absolute;
+          bottom: 0.5rem;
+          left: 0;
+          z-index: -1;
+          transition: all 0.3s;
+        }
+
+        &:hover::after {
+          bottom: 1rem;
+          height: 3rem;
+          transition: all 0.3s;
+        }
       }
     }
 
@@ -123,6 +132,10 @@
       font-size: 1.6rem;
       width: 70rem;
       margin-bottom: 4rem;
+
+      &--link {
+        display: inline-flex;
+      }
     }
 
     &__scroll-icon {

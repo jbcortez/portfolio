@@ -20,6 +20,15 @@ const IndexPage = () => {
             rel='stylesheet'
             href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'
           />
+          <link
+            rel='stylesheet'
+            href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'
+          />
+          <link rel='preconnect' href='https://fonts.gstatic.com' />
+          <link
+            href='https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap'
+            rel='stylesheet'
+          />
         </Helmet>
 
         <Hero />

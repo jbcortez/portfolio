@@ -20,9 +20,8 @@ const Hero = () => {
             href='mailto:justin.b.cortez@gmail.com'
             rel='noreferrer'
             className={'hero__text--link'}>
-            Let’s work together
+            Let’s work together.
           </a>
-          .
         </p>
         <Link
           activeClass='active'
