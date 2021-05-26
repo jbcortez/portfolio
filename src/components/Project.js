@@ -63,7 +63,11 @@ const Project = ({
             align === 'left' ? 'project__icons' : 'project-right__icons'
           }>
           {github.exists && (
-            <a href={github.link} target='_blank' rel='noreferrer'>
+            <a
+              href={github.link}
+              target='_blank'
+              rel='noreferrer'
+              aria-label='github'>
               <FontAwesomeIcon
                 className={
                   align === 'left'
@@ -77,7 +81,11 @@ const Project = ({
             </a>
           )}
           {link && (
-            <a href={link} target='_blank' rel='noreferrer'>
+            <a
+              href={link}
+              target='_blank'
+              rel='noreferrer'
+              aria-label='live project'>
               <FontAwesomeIcon
                 className={
                   align === 'left'

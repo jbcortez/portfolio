@@ -49,7 +49,8 @@ const IndexPage = () => {
         <a
           href='https://www.github.com/jbcortez'
           target='_blank'
-          rel='noreferrer'>
+          rel='noreferrer'
+          aria-label='github'>
           <FontAwesomeIcon
             className='margin__contact--social--icon'
             icon={faGithub}
@@ -59,7 +60,8 @@ const IndexPage = () => {
         <a
           href='https://www.linkedin.com/in/justin-cortez-341765146/'
           target='_blank'
-          rel='noreferrer'>
+          rel='noreferrer'
+          aria-label='linkedin'>
           <FontAwesomeIcon
             className='margin__contact--social--icon'
             icon={faLinkedin}
