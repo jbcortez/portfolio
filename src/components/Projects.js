@@ -5,6 +5,7 @@ import filefireMacbook from '../images/filefire-macbook.png';
 import ccMacbook from '../images/cc-macbook.png';
 import ccMobile from '../images/cc-iphone.png';
 import portfolioMacbook from '../images/portfolio-macbook.png';
+import portfolioIphone from '../images/portfolio-iphone.png';
 import weathercatMacbook from '../images/weathercat-macbook.png';
 
 const Projects = () => {
@@ -101,12 +102,16 @@ const Projects = () => {
           exists: true,
           link: 'https://www.github.com/jbcortez/portfolio',
         }}
-        link='https://www.justincortez.dev'
         screenshots={[
           {
             src: portfolioMacbook,
             alt: 'Porfolio macbook screenshot',
             class: 'project__screenshots--desktop',
+          },
+          {
+            src: portfolioIphone,
+            alt: 'Porfolio iphone screenshot',
+            class: 'project__screenshots--mobile',
           },
         ]}
         align={'right'}

@@ -1,5 +1,5 @@
 .hero {
-  height: calc(100vh - 2rem);
+  height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,31 +7,37 @@
   &__headline {
     font-size: 4rem;
     color: $turqoise;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1.5rem;
+    font-family: 'Merriweather', serif;
   }
 
   &__sub-headline {
     font-size: 2.4rem;
     color: $grey-nurse;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 2rem;
     line-height: 1.3;
 
-    &--highlight-container {
-      position: relative;
-    }
-
     &--highlight {
-      width: 16rem;
-      height: 1.3rem;
-      background-color: $night-shadz;
-      border-radius: 5px;
-      z-index: -1;
-      position: absolute;
-      left: 0;
-      bottom: 0.3rem;
-      transform: skewX(-30deg);
+      position: relative;
+      &::after {
+        content: '';
+        width: 100%;
+        background-color: $night-shadz;
+        height: 2rem;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0;
+        z-index: -1;
+        transition: all 0.3s;
+      }
+
+      &:hover::after {
+        bottom: 1rem;
+        height: 3rem;
+        transition: all 0.3s;
+      }
     }
   }
 
@@ -41,22 +47,35 @@
     margin-bottom: 3rem;
 
     &--link {
-      color: $turqoise;
+      position: relative;
+      font-weight: 700;
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        content: '';
+        width: 100%;
+        height: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.068);
+      }
 
-      &:hover {
-        color: #00fff2;
+      &::before {
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        content: '';
+        width: 0;
+        height: 1.5rem;
+        background-color: $accent;
+        transition: width 0.3s;
+        z-index: -100;
+      }
+
+      &:hover::before {
+        width: 100%;
+        transition: width 0.3s;
       }
     }
-  }
-
-  &__scroll-icon {
-    &--container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      height: 20rem;
-    }
-    cursor: pointer;
   }
 }
 
@@ -82,12 +101,6 @@
     &__sub-headline {
       font-size: 4rem;
       line-height: 5rem;
-
-      &--highlight {
-        width: 26rem;
-        height: 2rem;
-        bottom: 0.5rem;
-      }
     }
   }
 }
@@ -101,17 +114,8 @@
 
     &__sub-headline {
       font-size: 4.8rem;
-      &--highlight-container {
-        display: inline-block;
-      }
 
       &--highlight {
-        width: 32rem;
-        height: 2.5rem;
-        border-radius: 5px 10px 5px 10px;
-        bottom: 0;
-        left: -0.6 rem;
-        transform: skewX(-45deg);
       }
     }
 

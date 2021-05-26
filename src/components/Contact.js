@@ -34,7 +34,6 @@ const Contact = () => {
             className={'contact__social--icon'}
             icon={faGithub}
             size={'3x'}
-            color={'#f5f7f4'}
           />
         </a>
         <a
@@ -45,7 +44,6 @@ const Contact = () => {
             className={'contact__social--icon'}
             icon={faLinkedin}
             size={'3x'}
-            color={'#f5f7f4'}
           />
         </a>
       </div>

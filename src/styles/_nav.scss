@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #121e2be5;
+  background-color: rgba(255, 255, 255, 0.911);
 
   &__menu-btn {
     cursor: pointer;
@@ -22,7 +22,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: $turqoise;
+
       width: 4rem;
       height: 0.3rem;
       background: $turqoise;
@@ -56,10 +56,12 @@
 
         &::before {
           transform: rotate(45deg) translate(15px, -15px);
+          background: $night-shadz;
         }
 
         &::after {
           transform: rotate(-45deg) translate(15px, 15px);
+          background: $night-shadz;
         }
       }
     }
@@ -89,9 +91,9 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: $night-shadz;
+    background-color: $turqoise;
     list-style: none;
-    color: $grey-nurse;
+    color: #fff;
     transform: scale(0);
     z-index: 10;
     transform-origin: top right;
@@ -139,21 +141,19 @@
 
         &::after {
           position: absolute;
-          bottom: 0.2rem;
+          bottom: 0;
           left: -1px;
           content: '';
           height: 0.7rem;
-          width: 100%;
+          width: 0;
           background-color: $night-shadz;
           z-index: -1;
-          transform: skewX(-45deg);
-          border-radius: 5px;
+
           transition: all 0.2s;
-          opacity: 0;
         }
 
         &:hover::after {
-          opacity: 1;
+          width: 100%;
           transition: all 0.2s;
         }
       }

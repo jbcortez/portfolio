@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 
 $hoki: #668c9e;
-$turqoise: #24e1d8;
-$grey-nurse: #f5f7f4;
-$night-shadz: #b13b58;
-$text: #dfdae0;
-$accent-line: hsl(285, 10, 87, 44%);
-$background: #121e2b;
-$card: #334851;
+$turqoise: #0053b3;
+$grey-nurse: rgb(55, 58, 60);
+$night-shadz: rgb(255, 206, 70);
+$text: rgb(55, 58, 60);
+$accent-line: rgba(171, 171, 172, 0.44);
+$background: #fff;
+$card: #0053b3;
+$accent: rgb(255, 78, 108);
+$accent-alt: rgb(74, 218, 74);
 
 :root {
   font-size: 62.5%;
@@ -37,7 +40,7 @@ a {
   border-radius: 5px;
   color: $turqoise;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
 
@@ -56,16 +59,35 @@ a {
   height: 4.4rem;
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: $text;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
   backface-visibility: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: $turqoise;
+    transition: width 0.3s;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+  }
 
   &:hover {
+    color: #fff;
     transform: scale(1.05);
     transition: all 0.3s;
+    &::after {
+      width: 100%;
+      transition: width 0.3s;
+    }
   }
 }
 
@@ -74,9 +96,9 @@ a {
   background-color: transparent;
   width: 16rem;
   height: 5.2rem;
-  border: 2px dashed $turqoise;
+  border: 2px dashed $night-shadz;
   border-radius: 5px;
-  color: $turqoise;
+  color: $night-shadz;
   font-size: 2.4rem;
   font-weight: 400;
   cursor: pointer;

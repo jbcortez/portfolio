@@ -76,18 +76,20 @@ const Project = ({
               />
             </a>
           )}
-          <a href={link} target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon
-              className={
-                align === 'left'
-                  ? 'project__icons--icon'
-                  : 'project-right__icons--icon'
-              }
-              icon={faExternalLinkAlt}
-              color={'#dfdae0'}
-              size={'2x'}
-            />
-          </a>
+          {link && (
+            <a href={link} target='_blank' rel='noreferrer'>
+              <FontAwesomeIcon
+                className={
+                  align === 'left'
+                    ? 'project__icons--icon'
+                    : 'project-right__icons--icon'
+                }
+                icon={faExternalLinkAlt}
+                color={'#dfdae0'}
+                size={'2x'}
+              />
+            </a>
+          )}
         </div>
       </div>
       {screenshots != false ? (

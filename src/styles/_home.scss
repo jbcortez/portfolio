@@ -32,13 +32,13 @@ body {
     left: 4rem;
 
     &--text {
-      color: $hoki;
+      color: $text;
       font-size: 1.3rem;
       transform: rotate(270deg);
       letter-spacing: 0.2rem;
 
       &:hover {
-        color: $grey-nurse;
+        color: $turqoise;
         cursor: pointer;
       }
     }
@@ -48,7 +48,7 @@ body {
       width: 20rem;
       margin-top: 21rem;
       height: 1px;
-      background-color: $hoki;
+      background-color: $accent-line;
       border: none;
     }
   }
@@ -65,10 +65,10 @@ body {
     width: 2rem;
 
     &--icon {
-      color: $hoki;
+      color: $text;
 
       &:hover {
-        color: $grey-nurse;
+        color: $turqoise;
         cursor: pointer;
       }
     }
@@ -78,7 +78,7 @@ body {
       width: 20rem;
       margin-top: 11rem;
       height: 1px;
-      background-color: $hoki;
+      background-color: $accent-line;
       border: none;
     }
   }

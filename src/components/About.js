@@ -9,9 +9,8 @@ const About = () => {
       <div className='about__left'>
         <div className='about__header'>
           <h2 className='about__header--headline'>About Me</h2>
-          <span className='about__header--accent-line'>
-            <hr />
-          </span>
+
+          <hr className='about__header--accent-line' />
         </div>
 
         <p className='about__text'>
@@ -31,7 +30,6 @@ const About = () => {
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
                 Javascript
@@ -39,7 +37,6 @@ const About = () => {
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
                 React
@@ -47,7 +44,6 @@ const About = () => {
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
                 HTML5
@@ -55,7 +51,6 @@ const About = () => {
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
                 CSS3
@@ -67,7 +62,6 @@ const About = () => {
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
                 Sass
@@ -75,15 +69,13 @@ const About = () => {
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
-                GitHub
+                Git
               </li>
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
                 Firebase
@@ -91,10 +83,9 @@ const About = () => {
               <li>
                 <FontAwesomeIcon
                   icon={faCode}
-                  color={'#24e1d8'}
                   className={'about__skills--icon'}
                 />
-                Material-UI
+                Gatsby
               </li>
             </ul>
           </div>
