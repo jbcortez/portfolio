@@ -1,12 +1,12 @@
 import React from 'react';
 import Project from './Project';
-import filefireMobile from '../images/filefire-iphone.png';
-import filefireMacbook from '../images/filefire-macbook.png';
-import ccMacbook from '../images/cc-macbook.png';
-import ccMobile from '../images/cc-iphone.png';
-import portfolioMacbook from '../images/portfolio-macbook.png';
-import portfolioIphone from '../images/portfolio-iphone.png';
-import weathercatMacbook from '../images/weathercat-macbook.png';
+import filefireMobile from '../images/filefire-iphone-opt.png';
+import filefireMacbook from '../images/filefire-macbook-opt.png';
+import ccMacbook from '../images/cc-macbook-opt.png';
+import ccMobile from '../images/cc-iphone-opt.png';
+import portfolioMacbook from '../images/portfolio-macbook-opt.png';
+import portfolioIphone from '../images/portfolio-iphone-opt.png';
+import weathercatMacbook from '../images/weathercat-macbook-opt.png';
 
 const Projects = () => {
   return (
