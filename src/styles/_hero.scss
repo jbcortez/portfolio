@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+
   margin-top: -6rem;
 
   &__headline {
@@ -47,11 +47,11 @@
   &__text {
     font-size: 1.6rem;
     color: $text;
-    margin-bottom: 3rem;
+    padding-bottom: 4rem;
 
     &--link {
       position: relative;
-      display: block;
+      display: inline-block;
       width: fit-content;
       font-weight: 700;
       margin: 0 auto;
@@ -93,6 +93,19 @@
     &__sub-headline {
       font-size: 4rem;
       line-height: 5rem;
+
+      &--highlight {
+        &::after {
+          height: 1.5rem;
+
+          bottom: 0.5rem;
+        }
+
+        &:hover::after {
+          bottom: 0.7rem;
+          height: 3rem;
+        }
+      }
     }
   }
 }

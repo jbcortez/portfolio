@@ -17,9 +17,10 @@
     }
     &--accent-line {
       width: 100%;
-      height: 1px;
-      color: $accent-line;
       margin-left: 1rem;
+      border: none;
+      background-color: $accent-line;
+      height: 1px;
     }
   }
 }

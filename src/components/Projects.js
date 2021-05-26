@@ -13,9 +13,7 @@ const Projects = () => {
     <section className={'projects'} id='projects'>
       <div className='projects__header'>
         <h2 className={'projects__header--headline'}>Some Things I've Built</h2>
-        <span className='projects__header--accent-line'>
-          <hr />
-        </span>
+        <hr className='projects__header--accent-line' />
       </div>
       <Project
         title={'FileFire'}
@@ -59,7 +57,6 @@ const Projects = () => {
           exists: true,
           link: 'https://github.com/jbcortez/weathercat',
         }}
-        link='#'
         screenshots={[
           {
             src: weathercatMacbook,
@@ -95,7 +92,7 @@ const Projects = () => {
         title={'Portfolio'}
         id={'portfolio'}
         description={
-          'My personal portfolio. The design was inspired by Brittany Chiang. Built using Gatsby.'
+          "My personal portfolio. I decided to use Gatsby because I've really been enjoying React, and Gatsby offered both performance and simplicity."
         }
         technologies={['React', 'Sass', 'Gatsby']}
         github={{
