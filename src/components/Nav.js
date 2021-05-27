@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/main.scss';
 import { Link } from 'react-scroll';
+import resume from '../files/justin_cortez_resume.pdf';
 
 const Nav = () => {
   const toggleOpen = (e) => {
@@ -80,7 +81,7 @@ const Nav = () => {
           </Link>
         </li>
         <li className='navbar__links--link'>
-          <a href='#'>
+          <a href={resume} target='_blank' rel='noreferrer'>
             <button className='btn-nav'>Resume</button>
           </a>
         </li>
@@ -142,7 +143,11 @@ const Nav = () => {
           </Link>
         </li>
         <li className='navbar__links--mobile-link'>
-          <a href='#resume' onClick={toggleOpen}>
+          <a
+            href={resume}
+            onClick={toggleOpen}
+            target='_blank'
+            rel='noreferrer'>
             <button className='btn-tertiary'>Resume</button>
           </a>
         </li>

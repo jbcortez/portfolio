@@ -100,7 +100,7 @@ const Project = ({
           )}
         </div>
       </div>
-      {screenshots != false ? (
+      {screenshots !== false ? (
         <div
           className={
             align === 'left'
