@@ -14,11 +14,12 @@ const About = () => {
         </div>
 
         <p className='about__text'>
-          Before the pandemic hit, I worked in technical services for the Santa
-          Cruz Beach Boardwalk. The theme park industry was hit particularly
-          hard, and fortunately I was laid off. I say fortunately, because it
-          lead me down a better path. I saw this as an opportunity to learn and
-          advance my skills, and embark on a new career in web development.
+          I began my journey as a web developer in March of 2020. A local
+          non-profit, of which my wife is affiliated with, needed a website
+          developed for their latest campaign. Being recently furloughed due to
+          the pandemic, I volunteered to give it a shot. It was then that I
+          found my love for web development, and I’ve been learning and
+          advancing my skills ever since.
         </p>
 
         <p className='about__text'>
