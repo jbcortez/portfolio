@@ -15,11 +15,10 @@ const About = () => {
 
         <p className='about__text'>
           I began my journey as a web developer in March of 2020. A local
-          non-profit, of which my wife is affiliated with, needed a website
-          developed for their latest campaign. Being recently furloughed due to
-          the pandemic, I volunteered to give it a shot. It was then that I
-          found my love for web development, and I’ve been learning and
-          advancing my skills ever since.
+          non-profit needed a website developed for their latest campaign. Being
+          recently furloughed due to the pandemic, I volunteered to give it a
+          shot. It was then that I found my love for web development, and I’ve
+          been learning and advancing my skills ever since.
         </p>
 
         <p className='about__text'>
