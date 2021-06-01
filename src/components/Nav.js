@@ -8,10 +8,27 @@ const Nav = () => {
     const mobileNav = document.getElementById('mobile-nav');
     const menuBtn = document.getElementById('menu-btn');
     const body = document.body;
+    const mobileLinks = document.getElementsByClassName(
+      'navbar__links--mobile-link'
+    );
 
     mobileNav.classList.toggle('active');
     menuBtn.classList.toggle('open');
     body.classList.toggle('overflow-hidden');
+
+    let delay = 0;
+
+    for (let link of mobileLinks) {
+      if (menuBtn.classList.contains('open')) {
+        link.style.animation = 'fadeIn 0.5s ease-in-out';
+        link.style.animationFillMode = 'both';
+        delay += 0.2;
+        link.style.animationDelay = delay + 's';
+      } else {
+        link.style.animation = 'none';
+        link.style.opacity = '0';
+      }
+    }
   };
 
   return (

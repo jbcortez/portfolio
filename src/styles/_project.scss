@@ -73,6 +73,9 @@
   opacity: 0.1;
   background-image: url('../images/filefire-screen-opt.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  overflow: hidden;
   z-index: -1;
   transition: opacity 0.3s;
 }
@@ -169,7 +172,7 @@
 
       &--mobile {
         width: 15rem;
-        height: fit-content;
+        height: auto;
       }
     }
   }

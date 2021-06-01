@@ -33,12 +33,12 @@ a {
 
 .btn-primary {
   outline: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $turqoise;
   width: 17.7rem;
   height: 5.4rem;
-  border: $turqoise solid 1px;
+  border: none;
   border-radius: 5px;
-  color: $turqoise;
+  color: $background;
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
@@ -58,36 +58,16 @@ a {
     z-index: -2;
   }
 
-  &::before {
-    content: '';
-    width: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: $turqoise;
-    transition: width 0.2s;
-    z-index: -1;
-  }
-
   &:hover {
     transform: scale(1.05);
     transition: all 0.2s;
-    color: $background;
+    color: $text;
     border: none;
 
     &::after {
       width: 100%;
       transition: all 0.2s;
       border-color: $night-shadz;
-      border-radius: 5px;
-    }
-
-    &::before {
-      width: 100%;
-      transition: all 0.2s;
-      transition-delay: 0.2s;
-      border-color: $turqoise;
       border-radius: 5px;
     }
   }
@@ -167,4 +147,26 @@ a {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

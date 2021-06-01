@@ -16,6 +16,9 @@
     background-color: transparent;
     position: relative;
     outline: none;
+    animation: flyIn 0.5s ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 
     &--hamburger {
       position: absolute;
@@ -71,6 +74,7 @@
     color: $grey-nurse;
     font-size: 2rem;
     font-weight: bold;
+    animation: flyIn 0.7s ease-in-out;
 
     &--justin {
       color: $turqoise;
@@ -109,6 +113,7 @@
       padding: 2rem 0;
       font-size: 2.4rem;
       cursor: pointer;
+      opacity: 0;
     }
   }
 }
@@ -135,6 +140,24 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
+
+      &--link {
+        animation: flyIn 0.7s ease-in-out;
+        animation-fill-mode: both;
+
+        &:nth-child(4) {
+          animation-delay: 0.4s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.5s;
+        }
+        &:nth-child(2) {
+          animation-delay: 0.6s;
+        }
+        &:nth-child(1) {
+          animation-delay: 0.7s;
+        }
+      }
 
       &--link:not(:last-child) {
         position: relative;

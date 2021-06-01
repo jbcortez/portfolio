@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect } from 'react';
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -10,6 +11,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const IndexPage = () => {
+  const logPageOffset = () => {
+    const about = document.getElementById('about');
+    const projects = document.getElementById('projects');
+    const contact = document.getElementById('contact');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > about.offsetTop - (window.innerHeight - 150)) {
+        about.style.animation = 'fadeIn 0.5s ease-in-out';
+        about.style.animationFillMode = 'forwards';
+      }
+      if (
+        window.pageYOffset >
+        projects.offsetTop - (window.innerHeight - 150)
+      ) {
+        projects.style.animation = 'fadeIn 0.5s ease-in-out';
+        projects.style.animationFillMode = 'forwards';
+      }
+      if (window.pageYOffset > contact.offsetTop - (window.innerHeight - 150)) {
+        contact.style.animation = 'fadeIn 0.5s ease-in-out';
+        contact.style.animationFillMode = 'forwards';
+      }
+    });
+  };
+
+  useEffect(() => {
+    logPageOffset();
+  }, []);
+
   return (
     <div>
       <Nav />

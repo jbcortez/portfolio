@@ -30,6 +30,8 @@ body {
     position: fixed;
     bottom: 0;
     left: 4rem;
+    animation: fadeIn 0.5s ease-in-out 1s;
+    animation-fill-mode: both;
 
     &--text {
       color: $text;
@@ -63,6 +65,8 @@ body {
     bottom: 0;
     right: 4rem;
     width: 2rem;
+    animation: fadeIn 0.5s ease-in-out 1s;
+    animation-fill-mode: both;
 
     &--icon {
       color: $text;
