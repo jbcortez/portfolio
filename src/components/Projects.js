@@ -88,7 +88,7 @@ const Projects = () => {
           },
         ]}
       />
-      <Project
+      {/* <Project
         title={'Portfolio'}
         id={'portfolio'}
         description={
@@ -112,7 +112,7 @@ const Projects = () => {
           },
         ]}
         align={'right'}
-      />
+      /> */}
     </section>
   );
 };
