@@ -7,6 +7,8 @@ import ccMobile from '../images/cc-iphone-opt.png';
 import portfolioMacbook from '../images/portfolio-macbook-opt.png';
 import portfolioIphone from '../images/portfolio-iphone-opt.png';
 import weathercatMacbook from '../images/weathercat-macbook-opt.png';
+import teslaCloneIphone from '../images/tesla-clone-mobile.png';
+import teslaCloneMacbook from '../images/tesla-clone-macbook.png';
 
 const Projects = () => {
   return (
@@ -40,8 +42,32 @@ const Projects = () => {
         ]}
       />
       <Project
-        title={'WeatherCat'}
+        title={'Tesla Clone'}
         align={'right'}
+        id={'tesla-clone'}
+        description={'Tesla clone built utilizing React and Styled Components.'}
+        technologies={['Javascript', 'CSS3', 'React', 'Styled Components']}
+        github={{
+          exists: true,
+          link: 'https://github.com/jbcortez/tesla-clone',
+        }}
+        link='https://eager-wright-21976a.netlify.app/'
+        screenshots={[
+          {
+            src: teslaCloneMacbook,
+            alt: 'Tesla Clone Screenshot for Desktop',
+            class: 'project__screenshots--desktop',
+          },
+          {
+            src: teslaCloneIphone,
+            alt: 'Tesla Clone Screenshot for Mobile',
+            class: 'project__screenshots--mobile',
+          },
+        ]}
+      />
+      <Project
+        title={'WeatherCat'}
+        align={'left'}
         id={'weathercat'}
         description={
           'A simple weather application that queries the OpenWeather API. On every load, it also receives and displays a random picture of a cat from the Unsplash API.'
@@ -68,7 +94,7 @@ const Projects = () => {
       <Project
         title={'Coast Connect'}
         id={'coast-connect'}
-        align={'left'}
+        align={'right'}
         description={
           'This is a website for a local non-profit. It was my first project, and what initially sparked my interest in web development.'
         }
