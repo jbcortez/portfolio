@@ -96,7 +96,7 @@ const Projects = () => {
         id={'coast-connect'}
         align={'right'}
         description={
-          'This is a website for a local non-profit. It was my first project, and what initially sparked my interest in web development.'
+          'Website for a local non-profit built with WordPress. It was my first project, and what initially sparked my interest in web development.'
         }
         technologies={['Wordpress', 'CSS3']}
         github={{ exists: false }}
